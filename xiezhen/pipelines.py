@@ -45,7 +45,7 @@ class PagePipeline:
 
         model.counter = 0
 
-        model.created_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        model.created_at = item["origin_created_at"]
         model.updated_at = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
         category_id = item["category_id"]
